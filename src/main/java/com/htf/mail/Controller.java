@@ -19,16 +19,17 @@ public class Controller {
 	
 	@RequestMapping(value = "/sendWeather",method = RequestMethod.GET)
 	public String sendWeather() {
-		WeatherForecast wf = new WeatherForecast();
-		String string = wf.sendWeatherForecast();
-		if(string != null && !string.equals("")) {
-			List<Weather> list = JSONObject.parseArray(string, Weather.class);
-			Weather weather = list.get(0);
-			MailUtil.send(weather.getBasic().getCity()+"天气预报", weather.toString(), receiverList);
-			return "发送成功！";
-		}else {
-			return "因不明原因未查出天气!!!";
-		}
+		return "123";
+//		WeatherForecast wf = new WeatherForecast();
+//		String string = wf.sendWeatherForecast();
+//		if(string != null && !string.equals("")) {
+//			List<Weather> list = JSONObject.parseArray(string, Weather.class);
+//			Weather weather = list.get(0);
+//			MailUtil.send(weather.getBasic().getCity()+"天气预报", weather.toString(), receiverList);
+//			return "发送成功！";
+//		}else {
+//			return "因不明原因未查出天气!!!";
+//		}
 	}
 }
 
