@@ -19,7 +19,7 @@ public class Controller {
 	
 	@RequestMapping(value = "/sendWeather",method = RequestMethod.GET)
 	public String sendWeather() {
-		return "456";
+		return "456123123123";
 //		WeatherForecast wf = new WeatherForecast();
 //		String string = wf.sendWeatherForecast();
 //		if(string != null && !string.equals("")) {
