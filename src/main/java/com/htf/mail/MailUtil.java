@@ -52,7 +52,7 @@ public class MailUtil {
 	    });
 	    // 使用SSL,企业邮箱必需 end
 	    // TODO 显示debug信息 正式环境注释掉
-	    //session.setDebug(true);
+	    session.setDebug(true);
 	    return session;
 	}
 	 
